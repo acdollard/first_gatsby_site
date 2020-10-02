@@ -1,3 +1,18 @@
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 .header {
     /* background-color: #28b485; */
     height: 95vh;
@@ -9,7 +24,7 @@
         rgba(86, 67, 250, .8)),
         url('../images/alexFace.jpeg');
         background-attachment: fixed;
-        background-position: center;
+        background-position: 50% 47%;
         background-repeat: no-repeat;
         background-size: cover;
       
@@ -21,8 +36,15 @@
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* opacity: 0; */
+    /* transform: translate(-50%, -50%); */
     text-align: center;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    /* animation-delay: 1s; */
+    animation-timing-function: ease-out;
+    backface-visibility: hidden;
+
     
 }
 
@@ -32,6 +54,12 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 4rem;
     font-weight: 200;
+    text-transform: uppercase;
+    /* animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    backface-visibility: hidden; */
+
 }
 
 .header-primary :visited {
