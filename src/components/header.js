@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import rightarrow from "../images/right.png"
 
 import './header.css'
 
@@ -12,7 +13,13 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
+    <div class="header__logo-box">
+        <img src={rightarrow} alt="logo-box" class="header__logo" />
+        <h3 class="header__subtext">This guy</h3>
+    </div>
     <div className="header__text-box">
+
+
       <h1 style={{ margin: 0 }}>
         <Link className="header-primary" to="/" >
           {siteTitle}
