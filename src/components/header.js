@@ -15,7 +15,7 @@ const Header = ({ siteTitle }) => (
   >
     <div class="header__logo-box">
         <img src={rightarrow} alt="logo-box" class="header__logo" />
-        <h3 class="header__subtext">This guy</h3>
+        <h3 class="header__subtext">this guy</h3>
     </div>
     <div className="header__text-box">
 
