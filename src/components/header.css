@@ -1,0 +1,39 @@
+.header {
+    /* background-color: #28b485; */
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba(41, 152, 255, .8), 
+        rgba(86, 67, 250, .8)),
+        url('../images/alexFace.jpeg');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+    
+}
+
+
+.header__text-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+
+.header-primary {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+.header-primary :visited {
+    color: white;
+}
