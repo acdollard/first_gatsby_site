@@ -1,3 +1,12 @@
+:root {
+    --blue-light:rgba(41, 202, 255, 1); 
+    --blue-dark:rgba(86, 97, 250, 1);
+    --purple-light: rgb(187, 41, 255); 
+    ;
+  }
+  
+  
+
 @keyframes moveInLeft {
     0% {
         opacity: 0;
@@ -34,7 +43,7 @@
         to right bottom, 
         rgba(41, 202, 255, .8), 
         rgba(86, 97, 250, .8)),
-        url('../images/alexFace.jpeg');
+        url('../../images/alexFace.jpeg');
         background-attachment: fixed;
         background-position: 50% 47%;
         background-repeat: no-repeat;

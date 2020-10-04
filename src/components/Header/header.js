@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import rightarrow from "../images/right.png"
+import rightarrow from "../../images/right.png"
 
 import './header.css'
 
