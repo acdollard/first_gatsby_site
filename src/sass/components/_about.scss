@@ -1,12 +1,28 @@
 .about {
-    display: flex;
-    justify-content: center;
 
-    &--container {
-        width: 75vw;
+
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        margin: 0 auto;
+    }
+    
+    &__heading {
+        text-align: center;
+        
+    }
+    
+    &__text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
     }
 
-    &--text {
-
+    &__text--paragraph {
+        width: 75%;
     }
 }
