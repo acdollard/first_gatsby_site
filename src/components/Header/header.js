@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import rightarrow from "../../images/right.png"
 
-import './header.css'
+import '../../css/main.css'
 
 const Header = ({ siteTitle }) => (
   <header

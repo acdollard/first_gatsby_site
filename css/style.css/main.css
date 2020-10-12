@@ -1,0 +1,87 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  80% {
+    opacity: .95; }
+  100% {
+    opacity: 1; } }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
+
+.header-primary {
+  text-decoration: none;
+  color: white;
+  font-size: 4rem;
+  font-weight: 200; }
+
+.heading-secondary {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #777; }
+
+.header {
+  /* background-color: #28b485; */
+  height: 95vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  background-image: linear-gradient(to right bottom, rgba(41, 202, 255, 0.8), rgba(86, 97, 250, 0.8)), url("../../src/images/alexFace.jpeg");
+  background-attachment: fixed;
+  background-position: 50% 47%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.header__text-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  text-align: center;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  /* animation-delay: 1s; */
+  animation-timing-function: ease-in;
+  backface-visibility: hidden; }
+
+.header-primary :visited {
+  color: white; }
+
+.header__logo-box {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 16%;
+  transform: rotate(-15deg);
+  animation-name: fadeIn;
+  animation-delay: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+
+.header__logo {
+  height: 80px;
+  width: 80px;
+  color: white; }
+
+.header__subtext {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2.5rem;
+  color: white;
+  transform: translateX(-35%); }
+
+.about {
+  display: flex;
+  justify-content: center; }
+  .about--container {
+    width: 75vw; }
