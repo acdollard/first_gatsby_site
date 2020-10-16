@@ -1,0 +1,16 @@
+.section_heading {
+    display: flex;
+    align-items: center;
+    text-align: center;    
+    width: 100%;
+    font-size: 2rem;
+    
+    
+    &__text {
+        color: $color-grey-dark-2;
+        text-transform: uppercase;
+        font-weight: 400;
+        width: 100%;
+
+    }
+}

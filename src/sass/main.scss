@@ -3,9 +3,16 @@
 @import "./base/animations";
 @import "./base/typography";
 @import "./base/utilities";
+@import "./base/base";
 
 @import "./components/header";
-@import "./components/about"
+@import "./components/about";
+@import "./components/section-heading";
+@import "./components/work";
+
+@import "./layout/grid";
+
+
 
 
 

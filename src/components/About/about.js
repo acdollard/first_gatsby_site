@@ -1,16 +1,13 @@
 import React from 'react';
+import SectionHeading from '../SectionHeading/SectionHeading'
 import '../../css/main.css'
 
 
 const About = () => {
 
     return (
-        <div className="about__container">
-            <div className="about__heading">
-                <h2 className="heading-secondary">
-                    Exciting tours for adventurous people
-                </h2>
-            </div>  
+        <div className="about">
+            <SectionHeading title={'A Little About Me'} />
             <div className="about__text">
                 <p className="about__text--paragraph">
                     My name is alex dollard and this is some dummy text that I can use 

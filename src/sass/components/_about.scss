@@ -1,19 +1,6 @@
 .about {
+    padding: 5rem 0;
 
-
-    
-    &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 90vw;
-        margin: 0 auto;
-    }
-    
-    &__heading {
-        text-align: center;
-        
-    }
     
     &__text {
         display: flex;
@@ -24,5 +11,6 @@
 
     &__text--paragraph {
         width: 75%;
+        font-size: 2rem;
     }
 }
