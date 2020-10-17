@@ -61,17 +61,16 @@
         border-top-right-radius: 3px;
     
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark),
-             url('../../src/images/alexFace.jpeg');
-             background-position: 50% 47%;
+            background-image: linear-gradient(to right bottom, transparent, $color-green-dark),
+             url('../../src/images/code.jpg');
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark),
-             url('../../src/images/alexFace.jpeg');
+            background-image: linear-gradient(to right bottom, transparent, $color-blue-dark),
+             url('../../src/images/piano.jpg');
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark),
-             url('../../src/images/alexFace.jpeg');
+            background-image: linear-gradient(to right bottom, transparent, $color-orange-dark),
+             url('../../src/images/books.jpg');
         }
     }
 

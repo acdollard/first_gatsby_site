@@ -20,7 +20,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777; }
+  color: #555; }
 
 .header-primary {
   text-decoration: none;
@@ -60,6 +60,10 @@ html {
   background-position: 50% 47%;
   background-repeat: no-repeat;
   background-size: cover; }
+  .header-primary {
+    color: white;
+    font-size: 8rem;
+    width: 100%; }
 
 .header__text-box {
   position: absolute;
@@ -71,7 +75,8 @@ html {
   animation-duration: 2s;
   /* animation-delay: 1s; */
   animation-timing-function: ease-in;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  width: 600px; }
 
 .header-primary :visited {
   color: white; }
@@ -88,15 +93,16 @@ html {
   animation-fill-mode: forwards; }
 
 .header__logo {
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 70px;
   color: white; }
 
 .header__subtext {
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 2.5rem;
   color: white;
-  transform: translateX(-35%); }
+  transform: translateX(-25%);
+  margin: 0 0; }
 
 .about {
   padding: 5rem 0; }
@@ -116,9 +122,9 @@ html {
   width: 100%;
   font-size: 2rem; }
   .section_heading__text {
-    color: #999;
+    color: #555;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
     width: 100%; }
 
 .card {
@@ -161,12 +167,11 @@ html {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url("../../src/images/alexFace.jpeg");
-      background-position: 50% 47%; }
+      background-image: linear-gradient(to right bottom, transparent, #28b485), url("../../src/images/code.jpg"); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #29caff, #5661fa), url("../../src/images/alexFace.jpeg"); }
+      background-image: linear-gradient(to right bottom, transparent, #5661fa), url("../../src/images/piano.jpg"); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("../../src/images/alexFace.jpeg"); }
+      background-image: linear-gradient(to right bottom, transparent, #ff7730), url("../../src/images/books.jpg"); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;

@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
     className="header"
     style={{
       // background: '#28b485',
-      marginBottom: `1.45rem`,
+      // marginBottom: `1.45rem`,
     }}
   >
     <div class="header__logo-box">
@@ -20,10 +20,8 @@ const Header = ({ siteTitle }) => (
     <div className="header__text-box">
 
 
-      <h1 style={{ margin: 0 }}>
-        <Link className="header-primary" to="/" >
+      <h1 className="header-primary" >
           {siteTitle}
-        </Link>
       </h1>
     </div>
   </header>

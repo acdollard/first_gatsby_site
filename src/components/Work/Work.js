@@ -1,4 +1,5 @@
 import React from 'react';
+import SectionHeading from '../SectionHeading/SectionHeading';
 import '../../css/main.css';
 
 
@@ -7,11 +8,8 @@ const Work = () => {
     return (
 
         <section className="section-tours" id="section-tours">
-                <div className="u-center-text u-margin-bottom-big">
-                    <h2 className="heading-secondary">
-                        Most popular tours
-                    </h2>
-                </div>
+
+            <SectionHeading title={'What I do'} />
 
                 <div className="row">
                     <div className="col-1-of-3">
@@ -81,7 +79,7 @@ const Work = () => {
                                     &nbsp;
                                 </div>
                                 <h4 className="card__heading">
-                                    <span className="card__heading-span card__heading-span--3">Dog Training</span>
+                                    <span className="card__heading-span card__heading-span--3">Book Reviews</span>
                                 </h4>
                                 <div className="card__details">
                                     <ul>
@@ -106,9 +104,6 @@ const Work = () => {
                     </div>
 
                 </div>
-                        <div className="u-center-text u-margin-top-big">
-                            <a href="#" className="btn btn--green">Discover all tours</a>
-                        </div>
             </section>
     )
 };
