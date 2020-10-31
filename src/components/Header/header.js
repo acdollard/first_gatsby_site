@@ -13,13 +13,8 @@ const Header = ({ siteTitle }) => (
       // marginBottom: `1.45rem`,
     }}
   >
-    <div class="header__logo-box">
-        <img src={rightarrow} alt="logo-box" class="header__logo" />
-        <h3 class="header__subtext">this guy</h3>
-    </div>
+
     <div className="header__text-box">
-
-
       <h1 className="header-primary" >
           {siteTitle}
       </h1>

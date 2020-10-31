@@ -9,7 +9,7 @@ const Work = () => {
 
         <section className="section-tours u-margin-bottom-medium" id="section-tours">
 
-            <SectionHeading title={'What I do'} />
+            <SectionHeading title={'Projects'} className="sectionWork" />
 
                 <div className="row">
                     <div className="col-1-of-3">

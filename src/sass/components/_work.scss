@@ -1,3 +1,7 @@
+.sectionWork {
+    color: $color-grey-dark;
+}
+
 .card {
 
     //FUNCTIONALITY
@@ -61,16 +65,14 @@
         border-top-right-radius: 3px;
     
         &--1 {
-            background-image: linear-gradient(to right bottom, transparent, $color-green-dark),
+            background-image: linear-gradient(to right bottom, transparent, transparent),
              url('../../src/images/code.jpg');
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, transparent, $color-blue-dark),
-             url('../../src/images/piano.jpg');
+            background-image: url('../../src/images/piano.jpg');
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, transparent, $color-orange-dark),
-             url('../../src/images/books.jpg');
+            background-image: url('../../src/images/books.jpg');
         }
     }
 
