@@ -13,7 +13,7 @@ import Header from "./Header/header"
 import About from './About/about'
 import Work from './Work/Work'
 
-const Layout = ({ children }) => {
+const Layout = () => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

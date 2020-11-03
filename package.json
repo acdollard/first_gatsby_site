@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "^3.3.11",
     "gatsby-plugin-sass": "^2.3.16",
     "gatsby-plugin-sharp": "^2.6.36",
-    "gatsby-source-filesystem": "^2.3.30",
+    "gatsby-source-filesystem": "^2.4.0",
     "gatsby-source-wordpress": "^3.3.36",
     "gatsby-source-wordpress-experimental": "^1.7.9",
     "gatsby-transformer-sharp": "^2.5.15",

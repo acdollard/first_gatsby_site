@@ -2,9 +2,16 @@ module.exports = {
   siteMetadata: {
     title: `Alex Dollard`,
     description: `This is Alex fucking around. Hello!`,
-    author: `@gatsbyjs`,
+    author: `@acdollard`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
     {
       resolve: "gatsby-source-wordpress",
       options: {
@@ -44,7 +51,7 @@ module.exports = {
          * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
          * Example : 'demo.wp-api.org' or 'www.example-site.com'
          */
-        baseUrl: "localhost:10033",
+        baseUrl: "localhost:10038/alexdollard",
         // The protocol. This can be http or https.
         protocol: "http",
         // The rest api route prefix that your WordPress site is using.
