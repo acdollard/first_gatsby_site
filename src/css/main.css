@@ -265,7 +265,8 @@ html {
   margin: 1rem;
   display: inline-block;
   transition: all .5s;
-  animation-fill-mode: backwards; }
+  animation-fill-mode: backwards;
+  margin-top: 1rem; }
 
 .btn:hover {
   transform: translateY(-1rem);
@@ -277,7 +278,7 @@ html {
 
 .btn__header {
   position: absolute;
-  top: 54%;
+  top: 53%;
   right: 15%; }
 
 .btn--animated {

@@ -15,7 +15,7 @@
         display: inline-block;
         transition: all .5s;
         animation-fill-mode: backwards;
-
+        margin-top: 1rem;
     }
 
     &:hover {
@@ -30,7 +30,7 @@
 
     &__header {
         position: absolute;
-        top: 54%;
+        top: 53%;
         right: 15%;
     }
 
