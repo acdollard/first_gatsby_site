@@ -1,0 +1,21 @@
+.pageBreaker {
+    height: 75vh;
+    // padding: 20rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-blue-light, 0.801),
+        rgba($color-blue-dark, 0.801)), 
+        url('../../src/images/patch-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 20% 15%;
+    transform: skewY(-7deg);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+
+    & > * {
+        transform: skewY(7deg);
+    }
+
+}

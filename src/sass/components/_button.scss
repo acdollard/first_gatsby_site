@@ -5,15 +5,15 @@
         text-decoration: none;
         text-align: center;
 
-        padding: 1.2rem 4rem;
+        padding: .8rem 3.2rem;
         border-radius: 10rem;
         background-color: $color-grey-light-1;
         color: $color-grey-dark-3;
         font-size: 2rem;        
-        width: 50px;
+        width: 45px;
         margin: 1rem;
         display: inline-block;
-        transition: all .2sec ease-in;
+        transition: all .5s;
         animation-fill-mode: backwards;
 
     }
@@ -30,7 +30,12 @@
 
     &__header {
         position: absolute;
-        top: 52%;
+        top: 54%;
         right: 15%;
+    }
+
+    &--animated {
+        animation: moveInBtn .5s ease-out .75s;
+        animation-fill-mode: backwards;
     }
 }

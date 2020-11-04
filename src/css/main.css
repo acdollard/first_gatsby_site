@@ -16,6 +16,14 @@
   100% {
     opacity: 1; } }
 
+@keyframes moveInBtn {
+  0% {
+    opacity: 0;
+    transform: translateX(-2rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -69,11 +77,11 @@ html {
 .header__text-box {
   position: absolute;
   top: 30%;
-  right: 10%;
+  right: 7%;
   /* transform: translate(-50%, -50%); */
   text-align: center;
   animation-name: moveInLeft;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   /* animation-delay: 1s; */
   animation-timing-function: ease-in;
   backface-visibility: hidden;
@@ -86,11 +94,12 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: flex-start;
   justify-self: center;
   text-align: center;
   width: 80%;
-  margin: 5rem auto 3rem;
-  padding: 0 0 3rem;
+  height: 60vh;
+  margin: 2rem auto 1rem;
   border-radius: 25px;
   background-color: #f7f7f7; }
   .sectionAbout__heading {
@@ -247,15 +256,15 @@ html {
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
   text-align: center;
-  padding: 1.2rem 4rem;
+  padding: .8rem 3.2rem;
   border-radius: 10rem;
   background-color: #f7f7f7;
   color: #555;
   font-size: 2rem;
-  width: 50px;
+  width: 45px;
   margin: 1rem;
   display: inline-block;
-  transition: all .2sec ease-in;
+  transition: all .5s;
   animation-fill-mode: backwards; }
 
 .btn:hover {
@@ -268,8 +277,25 @@ html {
 
 .btn__header {
   position: absolute;
-  top: 52%;
+  top: 54%;
   right: 15%; }
+
+.btn--animated {
+  animation: moveInBtn .5s ease-out .75s;
+  animation-fill-mode: backwards; }
+
+.pageBreaker {
+  height: 75vh;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  background-image: linear-gradient(to right bottom, rgba(41, 202, 255, 0.801), rgba(86, 97, 250, 0.801)), url("../../src/images/patch-1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 20% 15%;
+  transform: skewY(-7deg);
+  margin-top: 10rem;
+  margin-bottom: 10rem; }
+  .pageBreaker > * {
+    transform: skewY(7deg); }
 
 .row {
   max-width: 114rem;

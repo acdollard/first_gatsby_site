@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header/header"
 import About from './About/about'
 import Work from './Work/Work'
+import Breaker from './Breaker/breaker'
 
 const Layout = () => {
   const data = useStaticQuery(graphql`
@@ -31,6 +32,7 @@ const Layout = () => {
          linkTo={'/alexdollard/blog'}
          destination={'blog'} />
       <About />
+      <Breaker />
       <Work />
     </>
   )

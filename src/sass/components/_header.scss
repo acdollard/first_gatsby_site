@@ -30,11 +30,11 @@
 .header__text-box {
     position: absolute;
     top: 30%;
-    right: 10%;
+    right: 7%;
     /* transform: translate(-50%, -50%); */
     text-align: center;
     animation-name: moveInLeft;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     /* animation-delay: 1s; */
     animation-timing-function: ease-in;
     backface-visibility: hidden;
