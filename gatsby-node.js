@@ -16,15 +16,15 @@ exports.createPages = async ({ graphql, actions }) => {
   // from the fetched data that you can run queries against.
   const result = await graphql(`
   {
-    allWordpressPage {
+    allWordpressPost {
       edges {
         node {
-          id
-          path
-          status
+          excerpt
+          wordpress_id
+          date(formatString: "Do MM YYYY HH:mm")
           title
+          content
           slug
-          
         }
       }
     }
@@ -37,38 +37,56 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Access query results via object destructuring
-  const { allWordpressPage } = result.data
+  const { allWordpressPage, allWordpressPost } = result.data
 
   // Create Page pages.
-  const pageTemplate = path.resolve(`./src/templates/page.js`)
+  const pageTemplate = path.resolve(`./src/templates/blogPage.js`);
+
+  createPage({
+    path: "/alexdollard/blog",
+    component: slash(pageTemplate),
+    context: {
+      posts: result.data.allWordpressPost.edges
+    }
+  })
+
+
   // We want to create a detailed page for each page node.
   // The path field contains the relative original WordPress link
   // and we use it for the slug to preserve url structure.
   // The Page ID is prefixed with 'PAGE_'
-  allWordpressPage.edges.forEach(edge => {
+  // allWordpressPost.edges.forEach(edge => {
     // Gatsby uses Redux to manage its internal state.
     // Plugins and sites can use functions like "createPage"
     // to interact with Gatsby.
-    createPage({
+    // createPage({
       // Each page is required to have a `path` as well
       // as a template component. The `context` is
       // optional but is often necessary so the template
       // can query data specific to each page.
-      path: edge.node.path,
-      component: slash(pageTemplate),
-      context: {
-        id: edge.node.id,
-        slug: edge.node.slug
-      },
-    })
-  })
+  //     path: edge.node.path,
+  //     component: slash(pageTemplate),
+  //     context: {
+  //       id: edge.node.id,
+  //       wordpress_id: edge.node.wordpress_id,
+  //       date: edge.node.date,
+  //       slug: edge.node.slug,
+  //       title: edge.node.title,
+  //       excerpt: edge.node.excerpt,
+  //       content: edge.node.content
+  //     },
+  //   })
+  // });
 
-  // const postTemplate = path.resolve(`./src/templates/post.js`)
-  // We want to create a detailed page for each post node.
-  // The path field stems from the original WordPress link
-  // and we use it for the slug to preserve url structure.
-  // The Post ID is prefixed with 'POST_'
-  // allWordpressPost.edges.forEach(edge => {
+  // const posts = allWordpressPost.edges
+  // const postsPerPage = 2
+  // const numberOfPages = Math.ceil(posts.length / postsPerPage)
+  // const postTemplate = path.resolve(`./src/templates/postPage.js`)
+  // // We want to create a detailed page for each post node.
+  // // The path field stems from the original WordPress link
+  // // and we use it for the slug to preserve url structure.
+  // // The Post ID is prefixed with 'POST_'
+  // posts.forEach(edge => {
   //   createPage({
   //     path: edge.node.path,
   //     component: slash(postTemplate),
@@ -78,14 +96,4 @@ exports.createPages = async ({ graphql, actions }) => {
   //   })
   // })
 
-//   allWordpressPost {
-//     edges {
-//       node {
-//         id
-//         path
-
-//       }
-//     }
-//   }
-// }
 }
