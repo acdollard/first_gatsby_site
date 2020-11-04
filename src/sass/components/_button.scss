@@ -1,0 +1,36 @@
+.btn {
+    &,
+    &:link, 
+    &:visited {
+        text-decoration: none;
+        text-align: center;
+
+        padding: 1.2rem 4rem;
+        border-radius: 10rem;
+        background-color: $color-grey-light-1;
+        color: $color-grey-dark-3;
+        font-size: 2rem;        
+        width: 50px;
+        margin: 1rem;
+        display: inline-block;
+        transition: all .2sec ease-in;
+        animation-fill-mode: backwards;
+
+    }
+
+    &:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 1rem 2rem rgba($color-grey-dark-3, .15);
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 .5rem 1rem rgba($color-grey-dark-3, .15);
+    }
+
+    &__header {
+        position: absolute;
+        top: 52%;
+        right: 15%;
+    }
+}

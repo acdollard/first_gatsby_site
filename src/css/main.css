@@ -54,6 +54,8 @@ html {
   /* background-color: #28b485; */
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(to right bottom, rgba(41, 202, 255, 0.8), rgba(187, 41, 255, 0.8)), url("../../src/images/alexFace.jpeg");
   background-attachment: fixed;
   background-position: 50% 47%;
@@ -67,7 +69,7 @@ html {
 .header__text-box {
   position: absolute;
   top: 30%;
-  left: 50%;
+  right: 10%;
   /* transform: translate(-50%, -50%); */
   text-align: center;
   animation-name: moveInLeft;
@@ -75,33 +77,10 @@ html {
   /* animation-delay: 1s; */
   animation-timing-function: ease-in;
   backface-visibility: hidden;
-  width: 600px; }
+  width: 550px; }
 
 .header-primary :visited {
   color: white; }
-
-.header__logo-box {
-  opacity: 0;
-  position: absolute;
-  top: 40%;
-  left: 16%;
-  transform: rotate(-15deg);
-  animation-name: fadeIn;
-  animation-delay: 3s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards; }
-
-.header__logo {
-  height: 70px;
-  width: 70px;
-  color: white; }
-
-.header__subtext {
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 2.5rem;
-  color: white;
-  transform: translateX(-25%);
-  margin: 0 0; }
 
 .sectionAbout {
   display: flex;
@@ -112,17 +91,17 @@ html {
   width: 80%;
   margin: 5rem auto 3rem;
   padding: 0 0 3rem;
-  border-radius: 5px;
-  background-color: #9e9e9e; }
+  border-radius: 25px;
+  background-color: #f7f7f7; }
   .sectionAbout__heading {
-    color: white; }
+    color: #555; }
   .sectionAbout__text {
     width: 75%;
     margin: 0 auto;
     justify-self: center;
     font-size: 2rem;
     font-weight: 200;
-    color: white; }
+    color: #555; }
 
 .section_heading {
   display: flex;
@@ -264,6 +243,33 @@ html {
 .section-tours {
   height: 100vh;
   margin-bottom: 3rem; }
+
+.btn, .btn:link, .btn:visited {
+  text-decoration: none;
+  text-align: center;
+  padding: 1.2rem 4rem;
+  border-radius: 10rem;
+  background-color: #f7f7f7;
+  color: #555;
+  font-size: 2rem;
+  width: 50px;
+  margin: 1rem;
+  display: inline-block;
+  transition: all .2sec ease-in;
+  animation-fill-mode: backwards; }
+
+.btn:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 2rem rgba(85, 85, 85, 0.15); }
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 0.5rem 1rem rgba(85, 85, 85, 0.15); }
+
+.btn__header {
+  position: absolute;
+  top: 52%;
+  right: 15%; }
 
 .row {
   max-width: 114rem;

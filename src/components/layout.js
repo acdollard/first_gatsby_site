@@ -26,11 +26,12 @@ const Layout = () => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header
+         siteTitle={data.site.siteMetadata?.title || `Title`}
+         linkTo={'/alexdollard/blog'}
+         destination={'blog'} />
       <About />
       <Work />
-
-    
     </>
   )
 }

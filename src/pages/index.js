@@ -5,9 +5,12 @@ import Layout from "../components/layout"
 import { graphql, StaticQuery } from 'gatsby'
 
 const IndexPage = () => (
-  <Layout>
+  <>
+    <Layout>
 
-  </Layout>
+    </Layout>
+
+  </>
 )
 
 export default IndexPage
