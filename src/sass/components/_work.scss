@@ -9,6 +9,7 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 52rem;
+    margin-bottom: 5rem;
 
     &__side {
         height: 52rem;
@@ -31,15 +32,27 @@
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $color-green-light, $color-green-dark);
+                background-image: linear-gradient(to right bottom, $color-blue-light, $color-purple-dark);
     
             }
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-blue-light, $color-blue-dark);
+                background-image: linear-gradient(to right bottom, $color-blue-light, $color-purple-dark);
     
             }
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-orange-light, $color-orange-dark);
+                background-image: linear-gradient(to right bottom, $color-blue-light, $color-purple-dark);
+    
+            }
+            &-4 {
+                background-image: linear-gradient(to right bottom, $color-blue-light, $color-purple-dark);
+    
+            }
+            &-5 {
+                background-image: linear-gradient(to right bottom, $color-blue-light, $color-purple-dark);
+    
+            }
+            &-6 {
+                background-image: linear-gradient(to right bottom, $color-blue-light, $color-purple-dark);
     
             }
         }
@@ -66,19 +79,28 @@
     
         &--1 {
             background-image: linear-gradient(to right bottom, transparent, transparent),
-             url('../../src/images/code.jpg');
+             url('../../src/images/jSaffert.png');
         }
         &--2 {
-            background-image: url('../../src/images/piano.jpg');
+            background-image: url('../../src/images/lullify.png');
         }
         &--3 {
-            background-image: url('../../src/images/books.jpg');
+            background-image: url('../../src/images/covidTracker.png');
+        }
+        &--4 {
+            background-image: url('../../src/images/star-dogs.png');
+        }
+        &--5 {
+            background-image: url('../../src/images/employeeDirectory.png');
+        }
+        &--6 {
+            background-image: url('../../src/images/animousity.png');
         }
     }
 
 
     &__heading {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         font-weight: 300;
         text-transform: uppercase;
         text-align: right;
@@ -86,7 +108,7 @@
         position: absolute;
         top: 12rem;
         right: 2rem;
-        width: 75%;
+        width: 80%;
     }
 
     &__heading-span {
@@ -95,33 +117,50 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image:linear-gradient(to right bottom, rgba($color-green-light, .85), rgba($color-green-dark, .85))
+            background-image:linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-purple-dark, .85))
         }
         &--2 {
-            background-image:linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-blue-dark, .85))
+            background-image:linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-purple-dark, .85))
         }
         &--3 {
-            background-image:linear-gradient(to right bottom, rgba($color-orange-light, .85), rgba($color-orange-dark, .85))
+            background-image:linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-purple-dark, .85))
+        }
+        &--4 {
+            background-image:linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-purple-dark, .85))
+        }
+        &--5 {
+            background-image:linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-purple-dark, .85))
+        }
+        &--6 {
+            background-image:linear-gradient(to right bottom, rgba($color-blue-light, .85), rgba($color-purple-dark, .85))
         }
 
     }
 
     &__details {
-        padding: 3rem;
+        padding: 1.5rem;
 
         ul {
             list-style: none;
-            width: 80%;
+            width: 70%;
             margin: 0 auto;
+            padding-inline-start: 0;
 
             li{
                 text-align: center;
                 font-size: 1.5rem;
                 padding: 1rem;
                 &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-2;
+                    border-bottom: 1px solid $color-grey-light-1;
                 }
             }
+
+        }
+
+        p {
+            font-size: 1.7rem;
+            font-weight: 200;
+            color: $color-grey-light-1;
         }
     }
 
@@ -136,20 +175,20 @@
         text-align: center;
     }
 
-    &__price-box {
-        text-align: center; 
-        color: $color-white;
-        margin-bottom: 8rem; 
-    }
 
-    &__price-only {
-        font-size: 1.4rem;
-        text-transform: uppercase;
-    }
+    &__header {
+        font-size: 2rem;
+        font-weight: 300;
+        text-decoration: none;
+        // text-transform: uppercase;
+        text-align: center;
+        margin: 1rem;
 
-    &__price-value {
-        font-size: 6rem;
-        font-weight: 100;
+        &-back {
+            font-size: 2.5rem;
+
+            color: $color-grey-light-1;
+        }
     }
 
 //FOR MOBILE SCREENS
@@ -198,7 +237,7 @@
         }
 
         &__price-value {
-            font-size: 4rem;
+            font-size: 3rem;
         }
     }
 

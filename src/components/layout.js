@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import {Helmet} from "react-helmet";
 
 import Header from "./Header/header"
 import About from './About/about'
@@ -27,6 +28,9 @@ const Layout = () => {
 
   return (
     <>
+      <Helmet>
+      {/* <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet" /> */}
+      </Helmet>
       <Header
          siteTitle={data.site.siteMetadata?.title || `Title`}
          linkTo={'/alexdollard/blog'}

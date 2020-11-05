@@ -48,7 +48,9 @@ exports.createPages = async ({ graphql, actions }) => {
     context: {
       posts: result.data.allWordpressPost.edges
     }
-  })
+  });
+
+  
 
 
   // We want to create a detailed page for each page node.

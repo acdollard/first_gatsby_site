@@ -13,8 +13,8 @@ const Header = ({ siteTitle, linkTo, destination }) => (
       <h1 className="header-primary" >
           {siteTitle}
       </h1>
-    </div>
     <Link className="btn btn__header btn--animated" to={linkTo}>{destination}</Link>
+    </div>
   </header>
 )
 
