@@ -177,6 +177,7 @@ const Work = () => {
                                         <li>sass</li>
                                         <li>Wordpress</li>
                                     </ul>
+ 
                                 </div>
                             </div>
                             <div className="card__side card__side--back card__side--back-5">

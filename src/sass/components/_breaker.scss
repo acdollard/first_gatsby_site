@@ -8,15 +8,21 @@
         rgba($color-blue-dark, 0.801)), 
         url('../../src/images/patch-1.jpg');
     background-size: cover;
-    background-attachment: fixed;
-
+    // background-attachment: fixed;
+    overflow: hidden;
     background-position: 20% 15%;
     transform: skewY(-7deg);
     margin-top: 10rem;
     margin-bottom: 10rem;
-
+    // position: absolute;
     & > * {
         transform: skewY(7deg);
     }
 
+}
+
+.quote-box {
+    position: relative;
+    top: 50%;
+    left: 33%;
 }

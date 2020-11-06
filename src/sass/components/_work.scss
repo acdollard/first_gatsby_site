@@ -141,8 +141,9 @@
         padding: 1.5rem;
 
         ul {
+            text-align: center;
             list-style: none;
-            width: 70%;
+            width: 50%;
             margin: 0 auto;
             padding-inline-start: 0;
 
@@ -161,6 +162,10 @@
             font-size: 1.7rem;
             font-weight: 200;
             color: $color-grey-light-1;
+        }
+
+        a {
+            color: white;
         }
     }
 

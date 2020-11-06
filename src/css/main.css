@@ -40,6 +40,11 @@ body {
   font-weight: 300;
   font-size: 2rem; }
 
+.background-quote {
+  font-family: 'Syne Mono', monospace;
+  color: #8adffc;
+  font-size: 2rem; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -214,8 +219,9 @@ html {
   .card__details {
     padding: 1.5rem; }
     .card__details ul {
+      text-align: center;
       list-style: none;
-      width: 70%;
+      width: 50%;
       margin: 0 auto;
       padding-inline-start: 0; }
       .card__details ul li {
@@ -228,6 +234,8 @@ html {
       font-size: 1.7rem;
       font-weight: 200;
       color: #f7f7f7; }
+    .card__details a {
+      color: white; }
   .card__cta {
     position: absolute;
     top: 50%;
@@ -314,13 +322,18 @@ html {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   background-image: linear-gradient(to right bottom, rgba(41, 202, 255, 0.801), rgba(86, 97, 250, 0.801)), url("../../src/images/patch-1.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  overflow: hidden;
   background-position: 20% 15%;
   transform: skewY(-7deg);
   margin-top: 10rem;
   margin-bottom: 10rem; }
   .pageBreaker > * {
     transform: skewY(7deg); }
+
+.quote-box {
+  position: relative;
+  top: 50%;
+  left: 33%; }
 
 .row {
   max-width: 114rem;
