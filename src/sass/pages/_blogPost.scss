@@ -1,0 +1,10 @@
+.blogPostDiv {
+   font-family: 'Montserrat', sans-serif;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 80%;
+   font-size: 1.5rem;
+   border-bottom: 1px solid $color-grey-dark;
+   margin: 0 auto;
+}
