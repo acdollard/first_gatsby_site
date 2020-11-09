@@ -281,9 +281,9 @@ html {
       .card__price-value {
         font-size: 3rem; } }
 
-.section-tours {
-  height: 100vh;
-  margin-bottom: 3rem; }
+.work-section {
+  margin-bottom: 350px;
+  height: auto; }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -335,6 +335,22 @@ html {
   top: 50%;
   left: 33%; }
 
+.footer {
+  height: 45vh;
+  clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(41, 202, 255, 0.8), rgba(86, 97, 250, 0.8)), url("../../src/images/books2.jpg");
+  background-attachment: fixed;
+  background-position: 50% 7%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .footer__contact-info {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem; }
+
 .blogPostDiv {
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -347,7 +363,8 @@ html {
 
 .row {
   max-width: 114rem;
-  margin: 2rem auto; }
+  margin: 2rem auto;
+  height: 52rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row [class^="col-"] {

@@ -1,0 +1,25 @@
+.footer {
+
+    height: 45vh;
+    clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-blue-light, .8), 
+        rgba($color-blue-dark, .8)),
+        url('../../src/images/books2.jpg');
+        background-attachment: fixed;
+        background-position: 50% 7%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__contact-info {
+            position: absolute;
+            top: 80%;
+            width: 100%;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+}

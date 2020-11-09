@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from "../components/Header/header"
+import Footer from "../components/Footer/footer"
+
 import {Link} from 'gatsby'
 import '../css/main.css';
 
@@ -19,7 +21,7 @@ export default ({ pageContext }) => (
                     </div>
                 </div>
             ))}
-
+        <Footer />
 
     </div>
 );

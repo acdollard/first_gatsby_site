@@ -7,7 +7,7 @@ const Work = () => {
 
     return (
 
-        <section className="u-margin-bottom-medium" id="section-tours">
+        <section className="u-margin-bottom-medium work-section" id="section-tours">
 
             <SectionHeading title={'Projects'} className="sectionWork" />
 

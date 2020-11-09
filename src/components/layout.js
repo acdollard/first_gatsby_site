@@ -14,6 +14,7 @@ import Header from "./Header/header"
 import About from './About/about'
 import Work from './Work/Work'
 import Breaker from './Breaker/breaker'
+import Footer from './Footer/footer'
 
 const Layout = () => {
   const data = useStaticQuery(graphql`
@@ -37,6 +38,7 @@ const Layout = () => {
       <About />
       <Breaker />
       <Work />
+      <Footer />
     </>
   )
 }
