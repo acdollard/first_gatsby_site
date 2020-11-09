@@ -12,12 +12,12 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    {
-      resolve: "gatsby-source-wordpress",
-      options: {
-        minimizeDeprecationNotice: true
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-wordpress",
+    //   options: {
+    //     minimizeDeprecationNotice: true
+    //   },
+    // },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
@@ -132,8 +132,6 @@ module.exports = {
           "**/tags",
           "**/taxonomies",
           "**/users",
-          "**/piano",
-          "**/book-reviews"  
         ],
         // Blacklisted routes using glob patterns
         excludedRoutes: ["**/posts/1456"],
