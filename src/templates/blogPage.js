@@ -9,7 +9,10 @@ import '../css/main.css';
 export default ({ pageContext }) => (
     <div>  
         <Header siteTitle={"blog"} linkTo={'/'} destination={'home'} />
-            {pageContext.posts.map(post => (
+
+            {
+
+            pageContext.posts.map(post => (
                 <div className="blogPostDiv" key={post.node.wordpress_id}>
                     <h3 className="heading-secondary" dangerouslySetInnerHTML={{__html: post.node.title}}/>
                     <small>

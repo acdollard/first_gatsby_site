@@ -37,7 +37,10 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   // Access query results via object destructuring
-  const { allWordpressPost } = result.data.allWordpressPost;
+  const { allWordpressPost } = result.data.allWordpressPost.edges;
+  const sortedPosts = result.data.allWordpressPost.edges.sort(function(a,b) {
+    return a.wordpress_id - b.wordpress_id
+  })
 
   // Create Page pages.
   const pageTemplate = path.resolve(`./src/templates/blogPage.js`);
@@ -46,7 +49,7 @@ exports.createPages = async ({ graphql, actions }) => {
     path: "/alexdollard/blog",
     component: slash(pageTemplate),
     context: {
-      posts: result.data.allWordpressPost.edges
+      posts: sortedPosts
     }
   });
 
