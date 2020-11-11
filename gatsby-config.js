@@ -99,7 +99,7 @@ module.exports = {
           // see https://en.support.wordpress.com/security/two-step-authentication/#application-specific-passwords
           wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
           wpcom_app_clientId: "54793",
-          wpcom_user: "alexdollard141@gmail.com",
+          wpcom_user: "gatsbyjswpexample@gmail.com",
           wpcom_pass: process.env.WORDPRESS_PASSWORD,
 
           // If you use "JWT Authentication for WP REST API" (https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/)
