@@ -346,7 +346,7 @@ html {
   background-size: cover; }
   .footer__contact-info {
     position: absolute;
-    top: 80%;
+    top: 50%;
     width: 100%;
     text-align: center;
     font-size: 3rem; }
