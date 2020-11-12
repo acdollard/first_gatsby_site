@@ -57,7 +57,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allWordpressPost.edges.forEach((post) => {
     createPage({
-      path: `/alexdollard/${post.node.slug}`,
+      path: `/${post.node.slug}`,
       component: slash(postPageTemplate),
       context: {
         posts: post.node
