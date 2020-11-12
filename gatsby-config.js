@@ -57,7 +57,7 @@ module.exports = {
         // The protocol. This can be http or https.
         protocol: process.env.GATSBY_API_PROTOCOL,
 
-        restApiRoutePrefix: "wp-json",
+        restApiRoutePrefix: false,
 
         hostingWPCOM: false,
 
