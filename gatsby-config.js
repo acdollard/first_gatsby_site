@@ -64,23 +64,29 @@ module.exports = {
         useACF: true,
 
         acfOptionPageIds: [],
-        // auth: {
-        //   // If auth.user and auth.pass are filled, then the source plugin will be allowed
-        //   // to access endpoints that are protected with .htaccess.
-        //   htaccess_user: "your-htaccess-username",
-        //   htaccess_pass: "your-htaccess-password",
-        //   htaccess_sendImmediately: false,
+        auth: {
+          // If auth.user and auth.pass are filled, then the source plugin will be allowed
+          // to access endpoints that are protected with .htaccess.
+          htaccess_user: "your-htaccess-username",
+          htaccess_pass: "your-htaccess-password",
+          htaccess_sendImmediately: false,
 
-        //   // see https://en.support.wordpress.com/security/two-step-authentication/#application-specific-passwords
-        //   wpcom_app_clientSecret: process.env.GATSBY_WORDPRESS_CLIENT_SECRET,
-        //   wpcom_app_clientId: "54793",
-        //   wpcom_user: process.env.GATSBY_WORDPRESS_USER,
-        //   wpcom_pass: process.env.GATSBY_WORDPRESS_PASSWORD,
+          // If hostingWPCOM is true then you will need to communicate with wordpress.com API
+          // in order to do that you need to create an app (of type Web) at https://developer.wordpress.com/apps/
+          // then add your clientId, clientSecret, username, and password here
+          // Learn about environment variables: https://www.gatsbyjs.org/docs/environment-variables
+          // If two-factor authentication is enabled then you need to create an Application-Specific Password,
+          // see https://en.support.wordpress.com/security/two-step-authentication/#application-specific-passwords
+          wpcom_app_clientSecret: process.env.WORDPRESS_CLIENT_SECRET,
+          wpcom_app_clientId: "54793",
+          wpcom_user: "gatsbyjswpexample@gmail.com",
+          wpcom_pass: process.env.WORDPRESS_PASSWORD,
 
-        //   jwt_user: process.env.GATSBY_JWT_USER,
-        //   jwt_pass: process.env.GATSBY_JWT_PASSWORD,
-        //   jwt_base_path: "/jwt-auth/v1/token", // Default - can skip if you are using https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/
-        // },
+          // If you use "JWT Authentication for WP REST API" (https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/)
+          // plugin, you can specify user and password to obtain access token and use authenticated requests against wordpress REST API.
+          jwt_user: process.env.JWT_USER,
+          jwt_pass: process.env.JWT_PASSWORD,
+        },
         // Set cookies that should be send with requests to WordPress as key value pairs
         cookies: {},
         // Set verboseOutput to true to display a verbose output on `npm run develop` or `npm run build`
