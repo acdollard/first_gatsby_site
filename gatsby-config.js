@@ -64,23 +64,23 @@ module.exports = {
         useACF: true,
 
         acfOptionPageIds: [],
-        auth: {
-          // If auth.user and auth.pass are filled, then the source plugin will be allowed
-          // to access endpoints that are protected with .htaccess.
-          htaccess_user: "your-htaccess-username",
-          htaccess_pass: "your-htaccess-password",
-          htaccess_sendImmediately: false,
+        // auth: {
+        //   // If auth.user and auth.pass are filled, then the source plugin will be allowed
+        //   // to access endpoints that are protected with .htaccess.
+        //   htaccess_user: "your-htaccess-username",
+        //   htaccess_pass: "your-htaccess-password",
+        //   htaccess_sendImmediately: false,
 
-          // see https://en.support.wordpress.com/security/two-step-authentication/#application-specific-passwords
-          wpcom_app_clientSecret: process.env.GATSBY_WORDPRESS_CLIENT_SECRET,
-          wpcom_app_clientId: "54793",
-          wpcom_user: "alexdollard141@gmail.com",
-          wpcom_pass: process.env.GATSBY_WORDPRESS_PASSWORD,
+        //   // see https://en.support.wordpress.com/security/two-step-authentication/#application-specific-passwords
+        //   wpcom_app_clientSecret: process.env.GATSBY_WORDPRESS_CLIENT_SECRET,
+        //   wpcom_app_clientId: "54793",
+        //   wpcom_user: process.env.GATSBY_WORDPRESS_USER,
+        //   wpcom_pass: process.env.GATSBY_WORDPRESS_PASSWORD,
 
-          jwt_user: process.env.GATSBY_JWT_USER,
-          jwt_pass: process.env.GATSBY_JWT_PASSWORD,
-          jwt_base_path: "/jwt-auth/v1/token", // Default - can skip if you are using https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/
-        },
+        //   jwt_user: process.env.GATSBY_JWT_USER,
+        //   jwt_pass: process.env.GATSBY_JWT_PASSWORD,
+        //   jwt_base_path: "/jwt-auth/v1/token", // Default - can skip if you are using https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/
+        // },
         // Set cookies that should be send with requests to WordPress as key value pairs
         cookies: {},
         // Set verboseOutput to true to display a verbose output on `npm run develop` or `npm run build`
