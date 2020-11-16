@@ -7,7 +7,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Alex Dollard`,
-    description: `This is Alex fucking around. Hello!`,
+    description: `This is Alex messing around. Hello!`,
     author: `@acdollard`,
   },
   plugins: [
@@ -18,12 +18,7 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    // {
-    //   resolve: "gatsby-source-wordpress",
-    //   options: {
-    //     minimizeDeprecationNotice: true
-    //   },
-    // },
+
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
@@ -51,17 +46,22 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-        {
+    // {
+    //   resolve: 'gatsby-source-wordpress-experimental',
+    //   options: {
+    //     url: "https://wp.alexdollard.xyz/graphql"
+    //   }
+    // }, 
+    {
       resolve: "gatsby-source-wordpress",
       options: {
         /*
          * The base URL of the WordPress site without the trailingslash and the protocol. This is required.
          * Example : 'demo.wp-api.org' or 'www.example-site.com'
          */
-        minimizeDeprecationNotice: true,
-        baseUrl: process.env.GATSBY_API_URL,
+        baseUrl: "https://wp.alexdollard.xyz",
         // The protocol. This can be http or https.
-        protocol: process.env.GATSBY_API_PROTOCOL,
+        protocol: "https",
         // The rest api route prefix that your WordPress site is using.
         // Sometimes this is modified by WordPress plugins.
         // If not set, it uses the default of "wp-json"

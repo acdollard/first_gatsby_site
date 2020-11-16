@@ -61,9 +61,9 @@ const Work = () => {
                                     
                                     <div className="card__header">Technologies used:</div>
                                     <ul>
-                                        <li>Php</li>
-                                        <li>Javascript</li>
-                                        <li>sass</li>
+                                        <li>Divi</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
                                         <li>Wordpress</li>
                                     </ul>
                                 </div>
@@ -72,12 +72,11 @@ const Work = () => {
                             <div className="card__details card__cta">
                                 <div className="card__header-back">About:</div>
                                 <p>
-                                        This is the personal website of Josephine Saffért, a German-born financial advisor and
-                                        real estate expert based in Nashville, TN. I came late in the game to this project, so credit
-                                        for building the actual site and design goes to <a href="https://www.moximetrics.com/">
-                                        Tyler Hervey of Moximetrics Digital.</a> I did however
-                                        get to make an impact on the styling and mobile responsiveness of the site. Check it out &nbsp;
-                                        <a href="https://josephinesaffert.com/">here.</a> It looks pretty darn good on mobile, too. 
+                                        Divi is a front-end builder that is used with Wordpress to create custom
+                                        themes from scratch. For this project, I got tons of experience building the landing pages
+                                        for several <a href="https://www.lullify.com/">Lullify</a> pages. Lullify, a company that 
+                                        produces ambient music for several settings, required many similar pages to be built in a short amount
+                                        of time. This project is not deployed yet. 
 
                                     </p>
                                 </div>
@@ -97,10 +96,10 @@ const Work = () => {
                                     
                                     <div className="card__header">Technologies used:</div>
                                     <ul>
-                                        <li>Php</li>
-                                        <li>Javascript</li>
-                                        <li>sass</li>
-                                        <li>Wordpress</li>
+                                        <li>React</li>
+                                        <li>MySQL</li>
+                                        <li>Material UI</li>
+                                        <li>Passport.js</li>
                                     </ul>
                                 </div>
                             </div>
@@ -108,12 +107,13 @@ const Work = () => {
                             <div className="card__details card__cta">
                                 <div className="card__header-back">About:</div>
                                 <p>
-                                        This is the personal website of Josephine Saffért, a German-born financial advisor and
-                                        real estate expert based in Nashville, TN. I came late in the game to this project, so credit
-                                        for building the actual site and design goes to <a href="https://www.moximetrics.com/">
-                                        Tyler Hervey of Moximetrics Digital.</a> I did however
-                                        get to make an impact on the styling and mobile responsiveness of the site. Check it out &nbsp;
-                                        <a href="https://josephinesaffert.com/">here.</a> It looks pretty darn good on mobile, too. 
+                                        This was our final project for Bootcamp, and I worked with the wonderful Kogan Pack
+                                        and Jamie Kook. It's a tracker for COVID-19 cases where users create an account, 
+                                        supply information about themselves and whether they have tested positive for Covid, 
+                                        then tracks their location on a dashboard alongside charts and data about the cases. I was in charge of 
+                                        building the map and charts. Check it out &nbsp;
+                                        <a href="https://covid19trackerapp.herokuapp.com/">here.</a> Or the 
+                                        <a href="https://github.com/acdollard/covid-19-tracker">Github repo.</a>
 
                                     </p>
                                 </div>
