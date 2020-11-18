@@ -32,6 +32,10 @@
         position: absolute;
         top: 65%;
         right: 15%;
+
+        @include respond(tab-port) {
+            top: 85%;
+        }
     }
 
     &--animated {

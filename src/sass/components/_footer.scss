@@ -1,8 +1,9 @@
 .footer {
-
+    margin-top: 15px;
     height: 45vh;
     clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);
     position: relative;
+    top: 100%;
 
     background-image: linear-gradient(
         to right bottom, 
@@ -14,12 +15,23 @@
         background-repeat: no-repeat;
         background-size: cover;
 
+
+        &__links-div {
+            height: 25px;
+        }
+
         &__contact-info {
             position: absolute;
+            height: auto;
             top: 50%;
             width: 100%;
             text-align: center;
             font-size: 3rem;
         }
+
+}
+
+.contact-info {
+    height: auto;
 
 }

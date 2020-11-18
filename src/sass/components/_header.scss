@@ -29,8 +29,8 @@
 
 .header__text-box {
     position: absolute;
-    top: 30%;
-    right: 7%;
+    top: 20%;
+    right: 50%;
     /* transform: translate(-50%, -50%); */
     text-align: center;
     animation-name: moveInLeft;
@@ -39,6 +39,14 @@
     animation-timing-function: ease-in;
     backface-visibility: hidden;
     width: 550px;
+
+    @include respond(tab-port) {
+        width: 100%;
+        margin: 0 auto;
+        top: 30%;
+        right: 0px;
+
+    }
     
 }
 

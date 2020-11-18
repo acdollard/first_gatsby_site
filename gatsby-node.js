@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const results = await graphql(`
     query {
-      allWordpressPost {
+      allWordpressPost(sort: { fields: [date] }){
         edges {
           node {
             id
@@ -58,9 +58,10 @@ exports.createPages = async ({ graphql, actions }) => {
 
 
   // Access query results via object destructuring
-  const sortedPosts = results.data.allWordpressPost.edges.sort(function(a,b) {
-    return a.id - b.id
-  })
+  // const sortedPosts = results.data.allWordpressPost.edges.sort(function(a,b) {
+  //   return a.id - b.id
+  // })
+  const posts = results.data.allWordpressPost.edges
 
   // Create Page pages.
   const pageTemplate = path.resolve(`./src/templates/blogPage.js`);
@@ -69,18 +70,18 @@ exports.createPages = async ({ graphql, actions }) => {
     path: "/alexdollard/blog",
     component: slash(pageTemplate),
     context: {
-      posts: sortedPosts
+      posts: posts
     }
   });
 
   const postPageTemplate = path.resolve('./src/templates/postPage.js');
 
-  sortedPosts.forEach((post) => {
+  posts.forEach((post) => {
     createPage({
-      path: `/alexdollard/${post.slug}`,
+      path: `/alexdollard/${post.node.slug}`,
       component: slash(postPageTemplate),
       context: {
-        posts: post
+        posts: post.node
       }
     })
   })

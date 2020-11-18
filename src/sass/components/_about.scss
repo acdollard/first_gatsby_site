@@ -25,5 +25,10 @@
         color: $color-grey-dark-3;
         }
 
+        @include respond(tab-port) {
+            margin:5rem;
+            height: auto;
+        }
+
 
 }

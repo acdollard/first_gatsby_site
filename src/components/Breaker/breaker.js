@@ -11,7 +11,7 @@ const Breaker = () => {
         <div className="pageBreaker">
         <div className="quote-box background-quote">
             <h2>"Ain't nothing to it but to do it."</h2>
-            <h4>-Mother Teresa</h4>
+            {/* <h4>-Mother Teresa</h4> */}
         </div>
         </div>
         </>

@@ -2,6 +2,8 @@
     color: $color-grey-dark;
 }
 
+
+
 .card {
 
     //FUNCTIONALITY
@@ -170,6 +172,8 @@
     }
 
 
+
+
     //FRONT SIDE STYLING
     &__cta {
         position: absolute;
@@ -197,7 +201,7 @@
     }
 
 //FOR MOBILE SCREENS
-    // @include respond(tab-port) {
+    @include respond(tab-port) {
         @media only screen and (max-width: 56.25em),
         only screen and (hover: none) {
 
@@ -234,7 +238,7 @@
             left: 0%;
             transform: translate(0);
             width: 100%;
-            padding: 7rem 4rem 4rem 4rem;
+            padding: 7rem .2rem 4rem .2rem;
         }
 
         &__price-box {
@@ -245,12 +249,16 @@
             font-size: 3rem;
         }
     }
-
+    }
 }
 
 .work-section {
     margin-bottom: 350px;
     height: auto;
-    // width: 100%;
+    
+
+    @include respond(tab-port) {
+        height: 600rem;
+    }
 }
 

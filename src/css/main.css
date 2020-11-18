@@ -62,6 +62,19 @@ body {
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+@media only screen and (max-width: 56.25em) {
+  body {
+    padding: 0; } }
 
 .header {
   /* background-color: #28b485; */
@@ -82,8 +95,8 @@ html {
 
 .header__text-box {
   position: absolute;
-  top: 30%;
-  right: 7%;
+  top: 20%;
+  right: 50%;
   /* transform: translate(-50%, -50%); */
   text-align: center;
   animation-name: moveInLeft;
@@ -92,6 +105,12 @@ html {
   animation-timing-function: ease-in;
   backface-visibility: hidden;
   width: 550px; }
+  @media only screen and (max-width: 56.25em) {
+    .header__text-box {
+      width: 100%;
+      margin: 0 auto;
+      top: 30%;
+      right: 0px; } }
 
 .header-primary :visited {
   color: white; }
@@ -117,6 +136,10 @@ html {
     font-size: 2rem;
     font-weight: 300;
     color: #555; }
+  @media only screen and (max-width: 56.25em) {
+    .sectionAbout {
+      margin: 5rem;
+      height: auto; } }
 
 .section_heading {
   display: flex;
@@ -252,38 +275,42 @@ html {
     .card__header-back {
       font-size: 2.5rem;
       color: #f7f7f7; }
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .card {
+
+@media only screen and (max-width: 56.25em) and (max-width: 56.25em), only screen and (max-width: 56.25em) and (hover: none) {
+  .card {
+    height: auto;
+    border-radius: 3px;
+    background-color: white;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side {
       height: auto;
-      border-radius: 3px;
-      background-color: white;
-      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
-      .card__side {
-        height: auto;
-        position: relative;
-        box-shadow: none; }
-        .card__side--back {
-          transform: rotateY(0);
-          clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%); }
-      .card:hover .card__side--front {
-        transform: rotateY(0); }
-      .card__details {
-        padding: 1rem 3rem; }
-      .card__cta {
-        position: relative;
-        top: 0%;
-        left: 0%;
-        transform: translate(0);
-        width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
-      .card__price-box {
-        margin-bottom: 3rem; }
-      .card__price-value {
-        font-size: 3rem; } }
+      position: relative;
+      box-shadow: none; }
+      .card__side--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%); }
+    .card:hover .card__side--front {
+      transform: rotateY(0); }
+    .card__details {
+      padding: 1rem 3rem; }
+    .card__cta {
+      position: relative;
+      top: 0%;
+      left: 0%;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem .2rem 4rem .2rem; }
+    .card__price-box {
+      margin-bottom: 3rem; }
+    .card__price-value {
+      font-size: 3rem; } }
 
 .work-section {
   margin-bottom: 350px;
   height: auto; }
+  @media only screen and (max-width: 56.25em) {
+    .work-section {
+      height: 600rem; } }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -312,6 +339,9 @@ html {
   position: absolute;
   top: 65%;
   right: 15%; }
+  @media only screen and (max-width: 56.25em) {
+    .btn__header {
+      top: 85%; } }
 
 .btn--animated {
   animation: moveInBtn .5s ease-out .75s;
@@ -334,22 +364,33 @@ html {
   position: relative;
   top: 50%;
   left: 33%; }
+  @media only screen and (max-width: 56.25em) {
+    .quote-box {
+      width: 85%; } }
 
 .footer {
+  margin-top: 15px;
   height: 45vh;
   clip-path: polygon(0 25vh, 100% 0, 100% 100%, 0 100%);
   position: relative;
+  top: 100%;
   background-image: linear-gradient(to right bottom, rgba(41, 202, 255, 0.8), rgba(86, 97, 250, 0.8)), url("../../src/images/books2.jpg");
   background-attachment: fixed;
   background-position: 50% 7%;
   background-repeat: no-repeat;
   background-size: cover; }
+  .footer__links-div {
+    height: 25px; }
   .footer__contact-info {
     position: absolute;
+    height: auto;
     top: 50%;
     width: 100%;
     text-align: center;
     font-size: 3rem; }
+
+.contact-info {
+  height: auto; }
 
 .blogPostDiv {
   font-family: 'Montserrat', sans-serif;
@@ -367,10 +408,28 @@ html {
   height: 52rem; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media only screen and (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 6rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
