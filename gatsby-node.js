@@ -34,7 +34,8 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const results = await graphql(`
     query {
-      allWordpressPost(sort: { fields: [date] }){
+      allWordpressPost(sort: { fields: [date],
+                                order: DESC }){
         edges {
           node {
             id
