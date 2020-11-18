@@ -24,6 +24,12 @@
             width: 100%;
         }
     
+    @include respond (tab-port) {
+        background-position: 20% 47%;
+        background-size: contain;
+
+
+    }
 }
 
 
