@@ -55,7 +55,6 @@ exports.createPages = async ({ graphql, actions }) => {
     throw new Error(results.errors)
   }
   console.log("<-------------------------------------------------------------------===================>");
-  console.log(results.data.allWordpressPost.edges);
 
 
   // Access query results via object destructuring
