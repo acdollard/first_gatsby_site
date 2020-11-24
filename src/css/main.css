@@ -92,6 +92,10 @@ html {
     color: white;
     font-size: 8rem;
     width: 100%; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      background-position: 20% 47%;
+      background-size: contain; } }
 
 .header__text-box {
   position: absolute;
