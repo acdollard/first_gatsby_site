@@ -8,7 +8,7 @@ import '../css/main.css';
 
 export default ({ pageContext }) => (
     <div>  
-        <Header siteTitle={"blog"} linkTo={'/'} destination={'home'} />
+        <Header className="header header_2" siteTitle={"blog"} linkTo={'/'} destination={'home'} />
 
             {
 

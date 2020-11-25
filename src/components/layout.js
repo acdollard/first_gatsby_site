@@ -34,7 +34,8 @@ const Layout = () => {
       <Header
          siteTitle={data.site.siteMetadata?.title || `Title`}
          linkTo={'/blog'}
-         destination={'blog'} />
+         destination={'blog'}
+         className="header" />
       <About />
       <Breaker />
       <Work />

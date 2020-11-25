@@ -18,6 +18,19 @@
         background-repeat: no-repeat;
         background-size: cover;
 
+
+    &_2 {
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba($color-blue-light, .8), 
+            rgba($color-purple-light, .8)),
+            url('../../src/images/books.jpg');
+            background-attachment: fixed;
+            background-position: 35% 47%;
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+
         &-primary {
             color: white; 
             font-size: 8rem;

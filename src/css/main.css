@@ -89,6 +89,12 @@ html {
   background-position: 50% 47%;
   background-repeat: no-repeat;
   background-size: cover; }
+  .header_2 {
+    background-image: linear-gradient(to right bottom, rgba(41, 202, 255, 0.8), rgba(187, 41, 255, 0.8)), url("../../src/images/books.jpg");
+    background-attachment: fixed;
+    background-position: 35% 47%;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .header-primary {
     color: white;
     font-size: 8rem;

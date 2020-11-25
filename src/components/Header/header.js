@@ -1,13 +1,11 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import rightarrow from "../../images/right.png"
 
 
 import '../../css/main.css'
 
-const Header = ({ siteTitle, linkTo, destination }) => (
-  <header className="header">
+const Header = ({ siteTitle, linkTo, destination, className }) => (
+  <header className={className}>
   
     <div className="header__text-box">
       <h1 className="header-primary" >
@@ -18,12 +16,4 @@ const Header = ({ siteTitle, linkTo, destination }) => (
   </header>
 )
 
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
-
-export default Header
+export default Header;
