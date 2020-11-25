@@ -351,6 +351,22 @@ html {
   animation: moveInBtn .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.btn-small {
+  text-decoration: none;
+  text-align: center;
+  padding: .8rem 1.2rem;
+  border-radius: 10rem;
+  background-color: white;
+  color: #555;
+  box-shadow: 0 0 3px 1px #777;
+  font-size: 1rem;
+  width: auto;
+  margin: .7rem;
+  display: inline-block;
+  transition: all .5s;
+  animation-fill-mode: backwards;
+  margin-top: .7rem; }
+
 .pageBreaker {
   height: 75vh;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

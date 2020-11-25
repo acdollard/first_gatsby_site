@@ -40,7 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             id
             excerpt
-            date(formatString: "Do MM YYYY HH:mm")
+            date(formatString: "dddd MMM Do, YYYY hh:mma")
             title
             content
             slug
