@@ -67,7 +67,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const pageTemplate = path.resolve(`./src/templates/blogPage.js`);
 
   createPage({
-    path: "/alexdollard/blog",
+    path: "/blog",
     component: slash(pageTemplate),
     context: {
       posts: posts
@@ -78,7 +78,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   posts.forEach((post) => {
     createPage({
-      path: `/alexdollard/${post.node.slug}`,
+      path: `/blog/${post.node.slug}`,
       component: slash(postPageTemplate),
       context: {
         posts: post.node

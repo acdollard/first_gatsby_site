@@ -20,7 +20,7 @@ export default ({ pageContext }) => (
                     </small>
                     <p dangerouslySetInnerHTML={{__html: post.node.excerpt}}/>
                     <div>
-                        <Link className="btn-small" to={`/alexdollard/${post.node.slug}`}>Read More</Link>
+                        <Link className="btn-small" to={`/blog/${post.node.slug}`}>Read More</Link>
                     </div>
                 </div>
             ))}

@@ -33,7 +33,7 @@ const Layout = () => {
       </Helmet>
       <Header
          siteTitle={data.site.siteMetadata?.title || `Title`}
-         linkTo={'/alexdollard/blog'}
+         linkTo={'/blog'}
          destination={'blog'} />
       <About />
       <Breaker />
