@@ -47,6 +47,7 @@
 
 
 .header__text-box {
+    display: inline-block;
     position: absolute;
     top: 20%;
     right: 50%;
@@ -57,7 +58,7 @@
     /* animation-delay: 1s; */
     animation-timing-function: ease-in;
     backface-visibility: hidden;
-    width: 550px;
+    width: 50%;
 
     @include respond(tab-port) {
         width: 100%;
