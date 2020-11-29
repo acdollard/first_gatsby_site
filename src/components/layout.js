@@ -39,7 +39,7 @@ const Layout = () => {
       <About />
       <Breaker />
       <Work />
-      <Footer />
+      <Footer className="footer" />
     </>
   )
 }

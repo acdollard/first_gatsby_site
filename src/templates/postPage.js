@@ -14,7 +14,7 @@ const postPage = ({ pageContext }) => (
     <p dangerouslySetInnerHTML={{__html: pageContext.posts.content}} />
 
   </div>
-  <Footer />
+  <Footer className="footer footer_2" />
   </>
 )
 

@@ -24,7 +24,7 @@ export default ({ pageContext }) => (
                     </div>
                 </div>
             ))}
-        <Footer />
+        <Footer className="footer footer_2" />
 
     </div>
 );

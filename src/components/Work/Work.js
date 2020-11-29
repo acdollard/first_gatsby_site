@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import Card from '../Card/Card';
 import '../../css/main.css';
