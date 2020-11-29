@@ -43,15 +43,6 @@ module.exports = {
         icon: `src/images/acd_logo.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-    // {
-    //   resolve: 'gatsby-source-wordpress-experimental',
-    //   options: {
-    //     url: "https://wp.alexdollard.xyz/graphql"
-    //   }
-    // }, 
     {
       resolve: `gatsby-source-wordpress`,
       options: {

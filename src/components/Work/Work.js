@@ -15,9 +15,9 @@ const Work = () => {
             description: `This is the personal website of Josephine Saffért, a German-born financial advisor and
             real estate expert based in Nashville, TN. I came late in the game to this project, so credit
             for building the actual site and design goes to <a href="https://www.moximetrics.com/">
-            Tyler Hervey of Moximetrics Digital.</a> I did however
-            get to make an impact on the styling and mobile responsiveness of the site. Check it out &nbsp;
-            <a href="https://josephinesaffert.com/">here.</a> It looks pretty darn good on mobile, too.`
+            <b>Tyler Hervey of Moximetrics Digital.</b></a> I did however
+            get to make an impact on the styling and mobile responsiveness of the site. Check it out
+            <a href="https://josephinesaffert.com/"><b>here.</b></a> It looks pretty darn good on mobile, too.`
         },
         {
             id: 2,
@@ -38,8 +38,8 @@ const Work = () => {
             supply information about themselves and whether they have tested positive for Covid, 
             then tracks their location on a dashboard alongside charts and data about the cases. I was in charge of 
             building the map and charts. Check it out &nbsp;
-            <a href="https://covid19trackerapp.herokuapp.com/">here.</a> Or the 
-            <a href="https://github.com/acdollard/covid-19-tracker">Github repo.</a>`
+            <a href="https://covid19trackerapp.herokuapp.com/"><b>here.</b></a> Or the 
+            <a href="https://github.com/acdollard/covid-19-tracker"><b>Github repo.</b></a>`
         },
         {
             id: 4,
@@ -49,7 +49,7 @@ const Work = () => {
             Dogs can be added and removed, and users can safely log in and out via an authentication process. 
             This app uses a Node and Express server and Sequelize ORM is used to create models and run queries for the user and the dogs.
             I used CSS frameworks Tailwind and Bootstrap for styling, and Handlebars to render the dog's horoscope. View deployed site 
-            <a href="https://sleepy-retreat-96731.herokuapp.com/">Here</a> and Github repo <a href="https://github.com/acdollard/star-dogs">Here.</a>`
+            <a href="https://sleepy-retreat-96731.herokuapp.com/"><b>Here</b></a> and Github repo <a href="https://github.com/acdollard/star-dogs"><b>Here.</b></a>`
         },
         {
             id: 5,
@@ -59,8 +59,8 @@ const Work = () => {
             The user can see a list of 200 fake employees and can filter them by name, or sort them by age. 
             Why would you want to sort them by age? Maybe you're ageist. I don't know. This project is a front-end using React, HTML, CSS, and Javascript.
             An API call is made to return a list of random users from the Random User API. View deployed app 
-             &nbsp;<a href="https://guarded-taiga-97272.herokuapp.com/">Here</a> or Github repo 
-             &nbsp;<a href="https://github.com/acdollard/employee-directory">Here.</a>`
+             &nbsp;<a href="https://guarded-taiga-97272.herokuapp.com/"><b>Here</b></a> or Github repo 
+             &nbsp;<a href="https://github.com/acdollard/employee-directory"><b>Here.</b></a>`
         },
         {
             id: 6,
@@ -70,7 +70,7 @@ const Work = () => {
             in the day, and I'm still pretty proud of it. The user searches for any movie, anime or
             non-anime, and a list of recommended anime movies are returned with some basic information 
             like title, description, year, etc. It is a very humble project that I keep around to remind
-            myself how far I've come. Github repo <a href="https://github.com/acdollard/Animousity">Here.</a>`
+            myself how far I've come. Github repo <a href="https://github.com/acdollard/Animousity"><b>Here.</b></a>`
         }
     ]
 

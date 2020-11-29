@@ -10,27 +10,6 @@ const { slash } = require(`gatsby-core-utils`)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  // The “graphql” function allows us to run arbitrary
-  // queries against the local Gatsby GraphQL schema. Think of
-  // it like the site has a built-in database constructed
-  // from the fetched data that you can run queries against.
-  // const result = await graphql(`
-  // {
-  //   allWordpressPost {
-  //     edges {
-  //       node {
-  //         excerpt
-  //         wordpress_id
-  //         date(formatString: "Do MM YYYY HH:mm")
-  //         title
-  //         content
-  //         slug
-  //       }
-  //     }
-  //   }
-  // }
-  // `)
-
 
   const results = await graphql(`
     query {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Ionicons } from 'react-icons';
 
 const Card = ({ projectInfo }) => {
 
@@ -22,12 +23,14 @@ const Card = ({ projectInfo }) => {
                 <ul>
                     {renderedTechList}
                 </ul>
+                <a className="link!" href="https://www.google.com">View Site</a>
+
             </div>
         </div>
         <div className="card__side card__side--back card__side--back-1">
             <div className="card__details card__cta">
             <div className="card__header-back">About:</div>
-                <p>{projectInfo.description}</p>
+                <p dangerouslySetInnerHTML={{__html: projectInfo.description}}></p>
             </div>
         </div>
     </div>
