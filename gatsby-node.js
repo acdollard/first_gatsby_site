@@ -23,6 +23,9 @@ exports.createPages = async ({ graphql, actions }) => {
             title
             content
             slug
+            categories {
+              name
+            }
           }
         }
       }
@@ -41,6 +44,9 @@ exports.createPages = async ({ graphql, actions }) => {
   //   return a.id - b.id
   // })
   const posts = results.data.allWordpressPost.edges
+  posts.forEach(post=> {
+    console.log(post.node.categories.name)
+;  })
 
   // Create Page pages.
   const pageTemplate = path.resolve(`./src/templates/blogPage.js`);
