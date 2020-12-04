@@ -29,6 +29,11 @@
             background-position: 50% 54%;
             background-repeat: no-repeat;
             background-size: cover;
+
+            @include respond (tab-port) {
+                background-position: 20% 47%;
+                background-size: cover;
+            }
     }
 
         &-primary {
@@ -39,9 +44,7 @@
     
     @include respond (tab-port) {
         background-position: 20% 47%;
-        background-size: contain;
-
-
+        background-size: cover;
     }
 }
 

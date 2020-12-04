@@ -95,6 +95,10 @@ html {
     background-position: 50% 54%;
     background-repeat: no-repeat;
     background-size: cover; }
+    @media only screen and (max-width: 56.25em) {
+      .header_2 {
+        background-position: 20% 47%;
+        background-size: cover; } }
   .header-primary {
     color: white;
     font-size: 8rem;
@@ -102,7 +106,7 @@ html {
   @media only screen and (max-width: 56.25em) {
     .header {
       background-position: 20% 47%;
-      background-size: contain; } }
+      background-size: cover; } }
 
 .header__text-box {
   display: inline-block;
@@ -322,7 +326,7 @@ html {
   height: auto; }
   @media only screen and (max-width: 56.25em) {
     .work-section {
-      height: 600rem; } }
+      height: 610rem; } }
 
 .btn, .btn:link, .btn:visited {
   text-decoration: none;
@@ -391,7 +395,7 @@ html {
 .quote-box {
   position: relative;
   top: 50%;
-  left: 33%; }
+  left: 13%; }
   @media only screen and (max-width: 56.25em) {
     .quote-box {
       width: 85%; } }
