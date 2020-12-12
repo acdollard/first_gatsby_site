@@ -372,7 +372,7 @@ html {
   color: #555;
   box-shadow: 1px 1.5px 1px 0px #777;
   font-size: 1rem;
-  width: auto;
+  width: 50px;
   margin: 0;
   display: inline-block;
   transition: all .5s;
