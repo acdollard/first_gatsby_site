@@ -33,7 +33,7 @@ const Layout = () => {
       <Header
          siteTitle={data.site.siteMetadata?.title || `Title`}
          linkTo={'/blog'}
-         destination={'blog'}
+         destination={'Go to blog'}
          className="header" />
       <About />
       <Breaker />
