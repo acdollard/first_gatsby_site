@@ -99,6 +99,16 @@ html {
       .header_2 {
         background-position: 20% 47%;
         background-size: cover; } }
+  .header_3 {
+    background-image: linear-gradient(to right bottom, rgba(163, 229, 151, 0.8), rgba(22, 153, 98, 0.8)), url("../../src/images/alexFace_2.jpg");
+    background-attachment: fixed;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    @media only screen and (max-width: 56.25em) {
+      .header_3 {
+        background-position: 20% 47%;
+        background-size: cover; } }
   .header-primary {
     color: white;
     font-size: 8rem;
@@ -413,6 +423,12 @@ html {
   background-size: cover; }
   .footer_2 {
     background-image: linear-gradient(to right bottom, rgba(241, 160, 160, 0.8), rgba(148, 7, 7, 0.8)), url("../../src/images/books2.jpg");
+    background-attachment: fixed;
+    background-position: 50% 7%;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .footer_3 {
+    background-image: linear-gradient(to right bottom, rgba(163, 229, 151, 0.8), rgba(22, 153, 98, 0.8)), url("../../src/images/books2.jpg");
     background-attachment: fixed;
     background-position: 50% 7%;
     background-repeat: no-repeat;

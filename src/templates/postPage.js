@@ -7,7 +7,7 @@ import Header from '../components/Header/header'
 
 const postPage = ({ pageContext }) => (
   <>
-  <Header className="header header_2" siteTitle={"blog"} linkTo={'/blog'} destination={'back'} />
+  <Header className="header header_3" siteTitle={"blog"} linkTo={'/blog'} destination={'back'} />
   <div className="blogPostDiv">
     <h1 className="heading-secondary" dangerouslySetInnerHTML={{__html: pageContext.posts.title}} />
 
@@ -15,7 +15,7 @@ const postPage = ({ pageContext }) => (
 
     <Link className="btn-small" to={'/blog'}>Back</Link>
   </div>
-  <Footer className="footer footer_2" />
+  <Footer className="footer footer_3" />
   </>
 )
 

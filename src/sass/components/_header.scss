@@ -35,6 +35,22 @@
                 background-size: cover;
             }
     }
+    &_3 {
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba($color-green-light, .8), 
+            rgba($color-green-dark, .8)),
+            url('../../src/images/alexFace_2.jpg');
+            background-attachment: fixed;
+            background-position: 50% 60%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @include respond (tab-port) {
+                background-position: 20% 47%;
+                background-size: cover;
+            }
+    }
 
         &-primary {
             color: white; 
