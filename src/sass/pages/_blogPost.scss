@@ -9,3 +9,11 @@
    margin: 0 auto;
    
 }
+
+.pagination {
+   display: flex;
+   flex-direction: column;
+   padding: 6px;
+   margin: 6px;
+   background-color: $color-grey-dark;
+}

@@ -44,20 +44,23 @@ exports.createPages = async ({ graphql, actions }) => {
   //   return a.id - b.id
   // })
   const posts = results.data.allWordpressPost.edges
-  posts.forEach(post=> {
-    console.log(post.node.categories.name)
-;  })
-
-  // Create Page pages.
+  const postsPerPage = 5
+  const numberOfPages = Math.ceil(posts.length / postsPerPage)
   const pageTemplate = path.resolve(`./src/templates/blogPage.js`);
+  console.log(posts.length, postsPerPage, numberOfPages);
+  // Create Page pages.
+  Array.from({length: numberOfPages}).forEach((post, index) => {
+    createPage({
+      path: index === 0 ? '/blog' : `/blog/${index + 1}`,
+      component: slash(pageTemplate),
+      context: {
+        posts: posts.slice(postsPerPage * index, (postsPerPage * index) + postsPerPage),
+        numberOfPages,
+        currentPage: index + 1
+      }
+    });
 
-  createPage({
-    path: "/blog",
-    component: slash(pageTemplate),
-    context: {
-      posts: posts
-    }
-  });
+  })
 
   const postPageTemplate = path.resolve('./src/templates/postPage.js');
 
