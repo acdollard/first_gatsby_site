@@ -7,7 +7,7 @@ import Header from '../components/Header/header'
 
 const postPage = ({ pageContext }) => (
   <>
-  <Header className="header header_3" siteTitle={"blog"} linkTo={'/blog'} destination={'back'} />
+  <Header className="header header_3" siteTitle={"blog"} linkTo={'/blog'} destination={'all posts'} />
   <div className="blogPostDiv">
     <h1 className="heading-secondary" dangerouslySetInnerHTML={{__html: pageContext.posts.title}} />
 
