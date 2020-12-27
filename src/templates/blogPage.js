@@ -26,7 +26,7 @@ export default ({ pageContext }) => (
             ))}
         <div className="pagination">
             {Array.from({length: pageContext.numberOfPages}).map((page, index) => (
-                <div className="pageNumberWrapper" key={index} isCurrentPage={index + 1 === pageContext.isCurrentPage}>
+                <div className={`pageNumberWrapper ${pageContext.isCurrentPage ? "currentPage" : ""}`} key={index} isCurrentPage={index + 1 === pageContext.isCurrentPage}>
                     <Link className="pageNumber" to={index === 0 ? '/blog' : `/blog/${index + 1}`}>
                         {index + 1}
                     </Link>
