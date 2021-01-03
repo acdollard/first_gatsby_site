@@ -9,7 +9,7 @@
    margin: 0 auto;
 
    @include respond(tab-port) { // width < 900px?
-      font-size: 1.8rem;    //1rem = 8px, 8/16 = 50%
+      font-size: 1.6rem;    //1rem = 8px, 8/16 = 50%
   };
    
 }
