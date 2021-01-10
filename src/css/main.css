@@ -38,7 +38,8 @@ body {
 .heading-secondary {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-family: 'Syne Mono', monospace; }
 
 .background-quote {
   font-family: 'Syne Mono', monospace;
@@ -444,7 +445,6 @@ html {
   height: auto; }
 
 .blogPostDiv {
-  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
