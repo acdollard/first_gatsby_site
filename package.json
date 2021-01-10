@@ -10,6 +10,8 @@
     "gatsby-cli": "^2.13.0",
     "gatsby-core-utils": "^1.4.0",
     "gatsby-image": "^2.5.0",
+    "gatsby-plugin-canonical-urls": "^2.8.0",
+    "gatsby-plugin-disqus": "^1.2.2",
     "gatsby-plugin-manifest": "^2.6.0",
     "gatsby-plugin-netlify": "^2.5.0",
     "gatsby-plugin-offline": "^3.4.0",

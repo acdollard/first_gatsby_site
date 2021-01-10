@@ -63,5 +63,17 @@ module.exports = {
         useACF: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `alexdollard-xyz`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://www.alexdollard.xyz`,
+      },
+    },
   ],
 }
