@@ -5,8 +5,8 @@
     align-content: flex-start;
     justify-self: center;
     text-align: center;
-    width: 80%;
-    height: 60vh;
+    width: auto;
+    // height: 60vh;
     margin: 2rem auto 1rem;
     border-radius: 25px;
     background-color: white;
@@ -17,7 +17,7 @@
 
 
     &__text {
-        width: 75%;
+        // width: 75%;
         margin: 0 auto;
         justify-self: center;
         font-size: 2rem;

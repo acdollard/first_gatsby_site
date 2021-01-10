@@ -75,7 +75,7 @@ const Work = () => {
     ]
 
     return (
-
+        <div>
         <section className="u-margin-bottom-medium work-section">
 
             <SectionHeading title={'Projects'} className="sectionWork" />
@@ -104,6 +104,8 @@ const Work = () => {
 
                 </div>
             </section>
+
+        </div>
     )
 };
 

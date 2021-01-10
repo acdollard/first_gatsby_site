@@ -27,9 +27,7 @@ const Layout = () => {
   `)
 
   return (
-    <>
-      <Helmet>
-      </Helmet>
+    <div>
       <Header
          siteTitle={data.site.siteMetadata?.title || `Title`}
          linkTo={'/blog'}
@@ -39,7 +37,7 @@ const Layout = () => {
       <Breaker />
       <Work />
       <Footer className="footer" />
-    </>
+    </div>
   )
 }
 
