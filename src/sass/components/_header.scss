@@ -23,7 +23,7 @@
         background-image: linear-gradient(
             to right bottom, 
             rgba($color-red-lighter, .8), 
-            rgba($color-red-dark, .8)),
+            rgba($color-purple-dark, .8)),
             url('../../src/images/alexFace_4.jpg');
             background-attachment: fixed;
             background-position: 50% 54%;
@@ -38,8 +38,8 @@
     &_3 {
         background-image: linear-gradient(
             to right bottom, 
-            rgba($color-green-light, .8), 
-            rgba($color-green-dark, .8)),
+            rgba($color-green-dark, .8), 
+            rgba($color-purple-light, .8)),
             url('../../src/images/alexFace_2.jpg');
             background-attachment: fixed;
             background-position: 50% 60%;

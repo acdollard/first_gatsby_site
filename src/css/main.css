@@ -90,7 +90,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover; }
   .header_2 {
-    background-image: linear-gradient(to right bottom, rgba(241, 160, 160, 0.8), rgba(148, 7, 7, 0.8)), url("../../src/images/alexFace_4.jpg");
+    background-image: linear-gradient(to right bottom, rgba(241, 160, 160, 0.8), rgba(124, 13, 175, 0.8)), url("../../src/images/alexFace_4.jpg");
     background-attachment: fixed;
     background-position: 50% 54%;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ html {
         background-position: 20% 47%;
         background-size: cover; } }
   .header_3 {
-    background-image: linear-gradient(to right bottom, rgba(163, 229, 151, 0.8), rgba(22, 153, 98, 0.8)), url("../../src/images/alexFace_2.jpg");
+    background-image: linear-gradient(to right bottom, rgba(22, 153, 98, 0.8), rgba(212, 133, 248, 0.8)), url("../../src/images/alexFace_2.jpg");
     background-attachment: fixed;
     background-position: 50% 60%;
     background-repeat: no-repeat;
@@ -419,14 +419,40 @@ html {
   background-position: 50% 7%;
   background-repeat: no-repeat;
   background-size: cover; }
+  .footer__flexbox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 110px;
+    flex-direction: row;
+    position: absolute;
+    bottom: 5%; }
+  .footer__social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%; }
+  .footer__social-link {
+    flex-direction: column;
+    width: 65px;
+    height: 35px;
+    color: white; }
+  .footer__copyright {
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    font-size: 1.7rem;
+    font-weight: 500; }
   .footer_2 {
-    background-image: linear-gradient(to right bottom, rgba(241, 160, 160, 0.8), rgba(148, 7, 7, 0.8)), url("../../src/images/books2.jpg");
+    background-image: linear-gradient(to right bottom, rgba(241, 160, 160, 0.8), rgba(124, 13, 175, 0.8)), url("../../src/images/books2.jpg");
     background-attachment: fixed;
     background-position: 50% 7%;
     background-repeat: no-repeat;
     background-size: cover; }
   .footer_3 {
-    background-image: linear-gradient(to right bottom, rgba(163, 229, 151, 0.8), rgba(22, 153, 98, 0.8)), url("../../src/images/books2.jpg");
+    background-image: linear-gradient(to right bottom, rgba(22, 153, 98, 0.8), rgba(212, 133, 248, 0.8)), url("../../src/images/books2.jpg");
     background-attachment: fixed;
     background-position: 50% 7%;
     background-repeat: no-repeat;
@@ -443,6 +469,11 @@ html {
 
 .contact-info {
   height: auto; }
+
+.icon {
+  height: 35px;
+  width: 35px;
+  color: white; }
 
 .blogPostDiv {
   display: flex;
