@@ -1,7 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-
-
 import '../../css/main.css'
 
 const Header = ({ siteTitle, linkTo, destination, className }) => (

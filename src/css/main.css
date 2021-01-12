@@ -433,7 +433,10 @@ html {
     margin-bottom: 2rem;
     width: 100%; }
   .footer__social-link {
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     width: 65px;
     height: 35px;
     color: white; }
