@@ -28,6 +28,9 @@ const Layout = () => {
 
   return (
     <div>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Syne+Mono&display=swap" rel="stylesheet"></link>
+      </Helmet>
       <Header
          siteTitle={data.site.siteMetadata?.title || `Title`}
          linkTo={'/blog'}

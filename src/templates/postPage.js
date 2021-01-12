@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/main.css';
 import {Link} from 'gatsby';
+import Helmet from 'react-helmet';
 
 import Footer from "../components/Footer/footer";
 import Header from '../components/Header/header';
@@ -8,6 +9,9 @@ import { Disqus } from 'gatsby-plugin-disqus';
 
 const postPage = ({ pageContext }) => (
   <>
+  <Helmet>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Syne+Mono&display=swap" rel="stylesheet"></link>
+  </Helmet>
   <Header className="header header_3" siteTitle={"blog"} linkTo={'/blog'} destination={'all posts'} />
   <div className="blogPostDiv">
     <h1 className="heading-secondary" dangerouslySetInnerHTML={{__html: pageContext.posts.title}} />

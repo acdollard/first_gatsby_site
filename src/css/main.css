@@ -25,7 +25,7 @@
     transform: translate(0); } }
 
 body {
-  font-family: 'Montserrat', 'Courier New', Courier, monospace;
+  font-family: 'Montserrat', 'Syne Mono', 'Courier New', Courier, monospace;
   font-weight: 400;
   line-height: 1.5;
   color: #555; }
@@ -147,8 +147,8 @@ html {
   justify-content: center;
   align-content: flex-start;
   justify-self: center;
-  text-align: center;
-  width: auto;
+  text-align: left;
+  width: 80%;
   margin: 2rem auto 1rem;
   border-radius: 25px;
   background-color: white; }
@@ -378,7 +378,6 @@ html {
   border-radius: 10rem;
   background-color: #eee;
   color: #555;
-  box-shadow: 1px 1.5px 1px 0px #777;
   font-size: 1rem;
   width: 50px;
   margin: 0;
@@ -447,7 +446,8 @@ html {
     position: absolute;
     bottom: 5%;
     font-size: 1.7rem;
-    font-weight: 500; }
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace; }
   .footer_2 {
     background-image: linear-gradient(to right bottom, rgba(241, 160, 160, 0.8), rgba(124, 13, 175, 0.8)), url("../../src/images/books2.jpg");
     background-attachment: fixed;
@@ -455,7 +455,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover; }
   .footer_3 {
-    background-image: linear-gradient(to right bottom, rgba(22, 153, 98, 0.8), rgba(212, 133, 248, 0.8)), url("../../src/images/books2.jpg");
+    background-image: linear-gradient(to right bottom, rgba(163, 229, 151, 0.8), rgba(212, 133, 248, 0.8)), url("../../src/images/books2.jpg");
     background-attachment: fixed;
     background-position: 50% 7%;
     background-repeat: no-repeat;

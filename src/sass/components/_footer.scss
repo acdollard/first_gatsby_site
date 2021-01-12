@@ -41,6 +41,7 @@
         bottom: 5%;
         font-size: 1.7rem;
         font-weight:500;
+        font-family: 'Courier New', Courier, monospace
     }
 
     background-image: linear-gradient(
@@ -67,7 +68,7 @@
     &_3 {
         background-image: linear-gradient(
         to right bottom, 
-        rgba($color-green-dark, .8), 
+        rgba($color-green-light, .8), 
         rgba($color-purple-light, .8)),
         url('../../src/images/books2.jpg');
         background-attachment: fixed;

@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Header from "../components/Header/header"
 import Footer from "../components/Footer/footer"
+import Breaker from  "../components/Breaker/breaker";
+import Helmet from 'react-helmet';
 
 import {Link} from 'gatsby'
 // import '../css/main.css';
@@ -16,6 +18,9 @@ export default ({ pageContext }) => {
 return (
     
     <div>  
+        <Helmet>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Syne+Mono&display=swap" rel="stylesheet"></link>
+        </Helmet>
         <Header className="header header_2" siteTitle={"blog"} linkTo={'/'} destination={'home'} />
             {pageContext.posts.map(post => (
                 <div className="blogPostDiv" key={post.node.wordpress_id}>
@@ -47,6 +52,7 @@ return (
                 )
              } )}
         </div>
+        {/* <Breaker /> */}
         <Footer className="footer footer_2" />
 
     </div>
