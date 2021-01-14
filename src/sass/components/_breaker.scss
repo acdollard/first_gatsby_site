@@ -1,5 +1,7 @@
 .pageBreaker {
     height: 75vh;
+    display: flex;
+    justify-content: center;
     // padding: 20rem 0;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     background-image: linear-gradient(
@@ -17,6 +19,11 @@
     // position: absolute;
     & > * {
         transform: skewY(7deg);
+    }
+
+    &__content {
+        width: 80%;
+        display: flex;
     }
 
 }

@@ -7,8 +7,8 @@ const About = () => {
 
     return (
         <div className="sectionAbout">
-                <div className="heading-seondary sectionAbout__heading">
-                    <SectionHeading title={'Who Am I?'} />
+                <div className="">
+                    <SectionHeading title={'Who Am I?'}/>
                 </div>
 
                 <p className="sectionAbout__text">

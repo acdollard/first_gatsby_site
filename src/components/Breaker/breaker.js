@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Breaker = () => {
+const Breaker = (props) => {
 
     return (
         <>
         <div className="pageBreaker">
-        <div className="quote-box background-quote">
-            <h2>"Ain't nothing to it but to do it."</h2>
+        <div className="pageBreaker__content">
+            {props.content}
         </div>
         </div>
         </>

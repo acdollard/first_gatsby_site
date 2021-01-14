@@ -14,6 +14,7 @@ import About from './About/about'
 import Work from './Work/Work'
 import Breaker from './Breaker/breaker'
 import Footer from './Footer/footer'
+import ContactForm from './ContactForm/ContactForm'
 
 const Layout = () => {
   const data = useStaticQuery(graphql`
@@ -37,7 +38,7 @@ const Layout = () => {
          destination={'Go to blog'}
          className="header" />
       <About />
-      <Breaker />
+      <Breaker content={<ContactForm />}/>
       <Work />
       <Footer className="footer" />
     </div>

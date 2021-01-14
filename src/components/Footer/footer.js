@@ -11,7 +11,7 @@ const Footer = ({ className }) => {
     <div className={className}>
         <div className="footer__flexbox">
             <div className="footer__social-links">
-                <a className="footer__social-link" href="#">
+                <a className="footer__social-link" href="/#contactForm">
                     <img alt="email" src={EmailIcon}></img>
                 </a>
                 <a className="footer__social-link" href="https://github.com/acdollard">

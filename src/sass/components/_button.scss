@@ -10,9 +10,9 @@
         background-color: $color-grey-light-1;
         color: $color-grey-dark-3;
         font-size: 2rem;        
-        width: auto;
+        // width: auto;
         margin: 1rem;
-        display: inline-block;
+        // display: inline-block;
         transition: all .5s;
         animation-fill-mode: backwards;
         margin-top: 1rem;
@@ -38,6 +38,11 @@
         }
     }
 
+    &__contact {
+        width: 85px;
+
+    }
+
     &--animated {
         animation: moveInBtn .5s ease-out .75s;
         animation-fill-mode: backwards;
@@ -53,7 +58,7 @@
         color: $color-grey-dark-3;
         // box-shadow: 1px 1.5px 1px 0px $color-grey-dark;
         font-size: 1rem;        
-        width: 50px;
+        width: 60px;
         margin: 0;
         display: inline-block;
         transition: all .5s;
