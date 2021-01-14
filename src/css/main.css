@@ -355,7 +355,9 @@ input {
   background-color: #f7f7f7;
   color: #555;
   font-size: 2rem;
+  width: auto;
   margin: 1rem;
+  display: inline-block;
   transition: all .5s;
   animation-fill-mode: backwards;
   margin-top: 1rem; }
@@ -377,7 +379,13 @@ input {
       top: 85%; } }
 
 .btn__contact {
-  width: 85px; }
+  display: flex;
+  width: 30%;
+  border: none;
+  justify-content: center; }
+  @media only screen and (max-width: 56.25em) {
+    .btn__contact {
+      width: 45%; } }
 
 .btn--animated {
   animation: moveInBtn .5s ease-out .75s;
