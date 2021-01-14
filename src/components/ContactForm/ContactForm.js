@@ -14,22 +14,24 @@ const ContactForm = () => {
     const submitEmail = (e) => {
         console.log("Your message:" + message)
         e.preventDefault();
-        // axios({
-        //     method: "POST",
-        //     url: "/send",
-        //     data: { 
-        //         name: name,
-        //         email: email,
-        //         message: message
-        //     }
-        // }).then((response) => {
-        //     if (response.data.status === 'success') {
-        //         alert("Message sent! Thank you");
-        //         resetForm();
-        //     } else if (response.data.status === 'fail') {
-        //         alert("Message failed to send")
-        //     }
-        // })
+        axios({
+            method: "POST",
+            url: "/send",
+            data: { 
+                name: name,
+                email: email,
+                message: message
+            }
+        }).then((response) => {
+            console.log("hi!");
+            console.log(response);
+            if (response.status === 200) {
+                alert("Message sent! Thank you");
+                resetForm();
+            } else if (response.data.status === 'fail') {
+                alert("Message failed to send")
+            }
+        })
     }
 
     const resetForm = () => {
