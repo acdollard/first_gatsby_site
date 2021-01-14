@@ -57,7 +57,7 @@ const ContactForm = () => {
             <div className="row__contact">
                 <div className="col-1-of-2">
                     <input 
-                        placeHolder="name" 
+                        placeHolder="your name" 
                         className="textInput" 
                         value={name} 
                         onChange={(e) => setName(e.target.value) }
@@ -65,7 +65,7 @@ const ContactForm = () => {
                 </div>
                 <div className="col-1-of-2">
                     <input 
-                        placeholder="email" 
+                        placeholder="your email" 
                         className="textInput"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
