@@ -39,8 +39,7 @@ return (
                 return (
                 <div 
                     className="pageNumberWrapper" 
-                    key={index} 
-                    isCurrentPage={index+1 === pageContext.currentPage} 
+                    key={index}  
                     style={{
                         backgroundColor: `${index+1 === pageContext.currentPage ? '#cccccc' : '#eee'}`,
                         color: '#f7f7f7'
