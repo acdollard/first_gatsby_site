@@ -2,11 +2,9 @@
     display: flex;
     flex-direction: column;
     width: 90%;
-    height: 55vh;
     justify-content: center;
     align-content: center;
     margin: 0 auto;
-    padding-top: 3rem;
     font-family: 'Montserrat', 'Syne Mono', 'Courier New', Courier, monospace;}
 
 .textInput {
@@ -28,7 +26,7 @@
 .row__contact {
     display: flex;
     // max-width: $grid-width;
-    margin: 2rem auto;
+    margin: 1rem auto;
     justify-content: center;
     width: 100%;
 

@@ -16,6 +16,7 @@
         transition: all .5s;
         animation-fill-mode: backwards;
         margin-top: 1rem;
+        font-family: 'Montserrat'
     }
 
     &:hover {
@@ -40,7 +41,7 @@
 
     &__contact {
         display: flex;
-        width: 30%;
+        width: 150px;
         border: none;
         justify-content: center;
 

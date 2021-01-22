@@ -176,7 +176,8 @@ input {
   align-items: center;
   text-align: center;
   width: 100%;
-  font-size: 2rem; }
+  font-size: 2rem;
+  height: 60px; }
   .section_heading__text {
     text-transform: uppercase;
     font-weight: 300;
@@ -360,7 +361,8 @@ input {
   display: inline-block;
   transition: all .5s;
   animation-fill-mode: backwards;
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  font-family: 'Montserrat'; }
 
 .btn:hover {
   transform: translateY(-1rem);
@@ -380,7 +382,7 @@ input {
 
 .btn__contact {
   display: flex;
-  width: 30%;
+  width: 150px;
   border: none;
   justify-content: center; }
   @media only screen and (max-width: 56.25em) {
@@ -507,11 +509,9 @@ input {
   display: flex;
   flex-direction: column;
   width: 90%;
-  height: 55vh;
   justify-content: center;
   align-content: center;
   margin: 0 auto;
-  padding-top: 3rem;
   font-family: 'Montserrat', 'Syne Mono', 'Courier New', Courier, monospace; }
 
 .textInput {
@@ -530,7 +530,7 @@ input {
 
 .row__contact {
   display: flex;
-  margin: 2rem auto;
+  margin: 1rem auto;
   justify-content: center;
   width: 100%; }
   .row__contact:not(:last-child) {
