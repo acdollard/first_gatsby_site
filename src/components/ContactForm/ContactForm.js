@@ -63,6 +63,7 @@ const ContactForm = () => {
                 <div className="col-1-of-2">
                     <input 
                         type="text"
+                        name="name"
                         placeholder="your name" 
                         className="textInput" 
                         // value={name} 
@@ -71,7 +72,8 @@ const ContactForm = () => {
                 </div>
                 <div className="col-1-of-2">
                     <input 
-                        type="text"
+                        type="email"
+                        name="email"
                         placeholder="your email" 
                         className="textInput"
                         // value={email}
@@ -82,6 +84,7 @@ const ContactForm = () => {
             <div className="row__contact" >
                 <input
                     type="text"
+                    name="subject"
                     placeholder="subject"
                     className="textInput"
                     // value={subject}
@@ -89,14 +92,15 @@ const ContactForm = () => {
                     />
 
             </div>
-                <div className="row__contact" >
-                    <textarea 
-                        placeholder="message" 
-                        className="textField"
-                        // value={message}
-                        // onChange={(e) => setMessage(e.target.value)}
-                        />
-                </div>
+            <div className="row__contact" >
+                <textarea 
+                    placeholder="message" 
+                    name="message"
+                    className="textField"
+                    // value={message}
+                    // onChange={(e) => setMessage(e.target.value)}
+                    />
+            </div>
             <div className="row__contact">
                 <button type="submit" className="btn btn__contact" >Submit</button>
             </div>
