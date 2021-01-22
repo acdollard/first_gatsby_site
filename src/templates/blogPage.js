@@ -41,11 +41,14 @@ return (
                     className="pageNumberWrapper" 
                     key={index} 
                     isCurrentPage={index+1 === pageContext.currentPage} 
-                    // style={{
-                    //     backgroundColor: `${props.isCurrentPage ? 'blue' : 'red'}`
-                    // }}
+                    style={{
+                        backgroundColor: `${index+1 === pageContext.currentPage ? '#cccccc' : '#eee'}`,
+                        color: '#f7f7f7'
+                    }}
                     >
-                    <Link className="pageNumber" to={index === 0 ? '/blog' : `/blog/${index + 1}`} >
+                    <Link className="pageNumber" to={index === 0 ? '/blog' : `/blog/${index + 1}`} 
+                            style={{ color: '#555'}}
+                    >
                         {index + 1}
                     </Link>
                 </div>
