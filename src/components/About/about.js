@@ -12,7 +12,8 @@ const About = () => {
                 </div>
 
                 <p className="sectionAbout__text">
-                    I'm a guy who has spent the last year or so learning to build websites. I built this website! I hope
+                    I'm a guy who has spent the last year or so learning to build websites. This is my blog, where I try to write about that
+                    whole process in ways my dad will understand. I built this website, I hope
                     you approve. I built it using React, Sass for styling, Wordpress as a headless CMS/database, and Gatsby
                     to statically render all my pages, so they should show up pretty sharpish. <br /><br />
                     I live in Nashville, TN. Besides web development, I also really like to play the piano and read interesting
